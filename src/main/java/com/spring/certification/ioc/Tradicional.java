@@ -1,11 +1,10 @@
 package com.spring.certification.ioc;
 
-import com.spring.certification.beans.Arrojado;
+import com.spring.certification.beans.Investimentos;
 
 public class Tradicional {
 	
 	public static void main(String[] args) {
-		System.out.println(new Arrojado().aplicar());
+		new Investimentos().investir();
 	}
-	//s
 }

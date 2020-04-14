@@ -2,7 +2,7 @@ package com.spring.certification.ioc;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.spring.certification.beans.Investidor;
+import com.spring.certification.beans.Investimentos;
 
 public class Programa {
 	
@@ -10,8 +10,8 @@ public class Programa {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
 		context.register(Escaneamento.class);
 		context.refresh();
-		Investidor investidor = context.getBean(Investidor.class);
-		System.out.println(investidor.aplicar());
+		Investimentos investidor = context.getBean(Investimentos.class);
+		investidor.investir();
 		context.close();
 	}
 

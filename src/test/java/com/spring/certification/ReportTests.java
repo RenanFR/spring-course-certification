@@ -29,7 +29,7 @@ public class ReportTests {
 		try {
 			service.print();
 			File folder = Paths.get("C:", "tmp", "report").toFile();
-			assertTrue(folder.isDirectory() && folder.length() != 0);
+			assertTrue(folder.isDirectory() && folder.list().length != 0);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
